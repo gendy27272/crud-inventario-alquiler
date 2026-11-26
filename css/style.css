@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; color: #222; }
+main { max-width: 900px; margin: 30px auto; padding: 0 16px; }
+h1 { text-align: center; }
+form { display: flex; flex-wrap: wrap; gap: 8px; background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+form input, form select { flex: 1 1 160px; padding: 8px; border: 1px solid #bbb; border-radius: 4px; }
+button { padding: 8px 14px; border: 0; border-radius: 4px; background: #1f6feb; color: #fff; cursor: pointer; }
+button.peligro { background: #d1242f; }
+button.secundario { background: #6e7781; }
+#errores { color: #d1242f; list-style: none; padding: 0; margin: 10px 0; }
+table { width: 100%; border-collapse: collapse; background: #fff; margin-top: 16px; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e5e5e5; }
+th { background: #1f2937; color: #fff; }
+td.vacio { text-align: center; color: #777; }

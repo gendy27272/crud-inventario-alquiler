@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Alquiler - CRUD</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Inventario de Alquiler</h1>
+    <form id="form-item" novalidate>
+      <input type="text" id="nombre" placeholder="Nombre del artículo">
+      <select id="categoria">
+        <option value="">Categoría</option>
+        <option>Mesas</option>
+        <option>Sillas</option>
+        <option>Toldos</option>
+        <option>Decoración</option>
+        <option>Sonido</option>
+      </select>
+      <input type="number" id="cantidad" placeholder="Cantidad" min="1">
+      <input type="number" id="precio" placeholder="Precio por día (RD$)" min="0" step="0.01">
+      <button type="submit" id="btn-guardar">Guardar</button>
+      <button type="button" id="btn-cancelar" hidden>Cancelar</button>
+    </form>
+    <ul id="errores"></ul>
+    <table>
+      <thead>
+        <tr><th>Artículo</th><th>Categoría</th><th>Cantidad</th><th>Precio/día</th><th>Acciones</th></tr>
+      </thead>
+      <tbody id="tabla-items"></tbody>
+    </table>
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/validacion.js"></script>
+  <script src="js/crear.js"></script>
+  <script src="js/listar.js"></script>
+  <script src="js/editar.js"></script>
+  <script src="js/eliminar.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
